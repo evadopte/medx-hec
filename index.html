@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Medx HEC</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Medx HEC, l'association santé et finance de HEC Paris : visites d'entreprises, study trips, événements et partenariats.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#accueil" aria-label="Medx HEC, accueil">
+      <span class="logo-rond"><img src="assets/logo-medx-hec.jpg" alt=""></span>
+      <span>Medx HEC</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#accueil">Actualités</a>
+      <a href="#qui-sommes-nous">Qui sommes-nous</a>
+      <a href="#missions">Missions</a>
+      <a href="#partenariats">Partenariats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ACCUEIL + FIL D'ACTUALITÉ ============ -->
+<div class="vue" id="accueil" data-titre="">
+  <section class="hero marine">
+    <span class="cercle-a"></span><span class="cercle-b"></span>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="surtitre">Association étudiante de HEC Paris</p>
+        <h1>Medx HEC</h1>
+        <p class="devise">Health · Finance · Strategy</p>
+        <p class="lead">Nous faisons découvrir aux étudiants HEC l'industrie de la santé, de la medtech au private equity, en les mettant en relation avec celles et ceux qui la font avancer.</p>
+        <div class="actions">
+          <a class="btn" href="#missions">Découvrir nos missions</a>
+          <a class="btn ghost" href="#partenariats">Devenir partenaire</a>
+        </div>
+        <p class="mention">Campus HEC Paris, Jouy-en-Josas · Bureau 2026-2027</p>
+      </div>
+      <div class="hero-logo"><img src="assets/logo-medx-hec.jpg" alt="Logo Medx HEC"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="chiffres">
+        <div class="chiffre"><b>4 000<sup>1</sup></b><span>alumni HEC travaillent dans la santé</span></div>
+        <div class="chiffre"><b>2<sup>2</sup></b><span>visites d'entreprise par mois</span></div>
+        <div class="chiffre"><b>14</b><span>membres dans l'équipe 2026-2027</span></div>
+        <div class="chiffre"><b>8</b><span>secteurs suivis par nos partnership officers</span></div>
+      </div>
+      <p class="source">1, 2. Présentation Medx HEC 2026-2027.</p>
+    </div>
+  </section>
+
+  <section class="band carte" aria-labelledby="titre-feed">
+    <div class="wrap">
+      <div class="feed-head">
+        <div>
+          <p class="surtitre">Fil d'actualité</p>
+          <h2 id="titre-feed">Ce qui se passe chez Medx HEC</h2>
+        </div>
+        <div class="filtres" role="group" aria-label="Filtrer les actualités">
+          <button type="button" data-f="tout" aria-pressed="true">Tout</button>
+          <button type="button" data-f="annonce" aria-pressed="false">Annonces</button>
+          <button type="button" data-f="visite" aria-pressed="false">Visites</button>
+          <button type="button" data-f="evenement" aria-pressed="false">Événements</button>
+          <button type="button" data-f="voyage" aria-pressed="false">Study trips</button>
+        </div>
+      </div>
+      <div class="feed" id="feed"></div>
+      <div class="actions"><a class="btn ghost" data-linkedin href="https://www.linkedin.com/company/medx-hec/" target="_blank" rel="noopener">Suivre Medx HEC sur LinkedIn</a></div>
+    </div>
+  </section>
+
+  <section class="band marine">
+    <div class="wrap split">
+      <div>
+        <p class="surtitre">Étudiants HEC</p>
+        <h2>La santé vous intéresse&nbsp;? Votre place est ici</h2>
+        <p>Medx HEC est ouvert à tous les étudiants HEC, quel que soit leur parcours. Visites, conférences, voyages : rejoignez la communauté qui relie santé, finance, stratégie et technologie.</p>
+        <div class="actions"><a class="btn" href="#contact">Rejoindre l'association</a></div>
+      </div>
+      <div class="grid g2">
+        <div class="card"><span data-icon="immeuble"></span><h3>Company visits</h3><p class="muted">Conseil, fonds VC/PE, laboratoires, medtechs.</p></div>
+        <div class="card"><span data-icon="avion"></span><h3>Study trips</h3><p class="muted">Les grands écosystèmes santé à l'international.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ QUI SOMMES-NOUS ============ -->
+<div class="vue" id="qui-sommes-nous" data-titre="Qui sommes-nous" hidden>
+  <section class="page-head marine"><span class="cercle-a"></span>
+    <div class="wrap"><p class="surtitre">Qui sommes-nous</p><h1>Des scientifiques à HEC</h1><p>Une équipe venue de la médecine, de la pharmacie et de l'ingénierie, au service de tous les étudiants HEC.</p></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="bandeau">Medx HEC est né d'un constat : la santé a besoin de profils qui parlent à la fois la langue du soin et celle du business.</p>
+      <div class="grid g2">
+        <div class="card"><span data-icon="fiole"></span><h3>Un bureau aux profils médicaux et scientifiques</h3><p>Notre bureau est majoritairement composé d'étudiants issus de la médecine, de la pharmacie, de l'ingénierie et des sciences de la vie.</p></div>
+        <div class="card"><span data-icon="colonnes"></span><h3>Les programmes HEC</h3><p>Nos membres suivent le Master in Management (classé n°1 en Europe par le Financial Times<sup>1</sup>), X-HEC Entrepreneurs et le Master in Economics &amp; Finance.</p></div>
+        <div class="card"><span data-icon="mains"></span><h3>Ouvert à tous les étudiants HEC</h3><p>Nul besoin d'être médecin : Medx HEC accueille toute personne curieuse du secteur de la santé et de ses liens avec la finance, la stratégie et la technologie.</p></div>
+        <div class="card"><span data-icon="globe"></span><h3>Un réseau de 4 000 alumni<sup>2</sup></h3><p>4 000 alumni HEC travaillent aujourd'hui dans l'industrie de la santé. Nous les rapprochons des étudiants d'aujourd'hui.</p></div>
+      </div>
+      <p class="source">1. Financial Times, cité dans la présentation Medx HEC. 2. Présentation Medx HEC 2026-2027.</p>
+    </div>
+  </section>
+
+  <section class="band marine" aria-labelledby="titre-bureau">
+    <div class="wrap">
+      <p class="surtitre">Bureau 2026-2027</p>
+      <h2 id="titre-bureau">Le bureau</h2>
+      <div class="equipe" id="bureau" style="margin-top:32px"></div>
+    </div>
+  </section>
+
+  <section class="band marine" style="border-top:1px solid var(--marine-2)" aria-labelledby="titre-officers">
+    <div class="wrap">
+      <p class="surtitre">Un interlocuteur par secteur</p>
+      <h2 id="titre-officers">Partnership officers</h2>
+      <p>Chaque officer suit un secteur de la santé et entretient la relation avec nos partenaires.</p>
+      <div class="equipe" id="officers" style="margin-top:32px"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ MISSIONS ============ -->
+<div class="vue" id="missions" data-titre="Missions" hidden>
+  <section class="page-head marine"><span class="cercle-a"></span>
+    <div class="wrap"><p class="surtitre">Missions</p><h1>Ouvrir les portes de la santé</h1><p>Trois objectifs, trois façons d'agir.</p></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="surtitre">Nos objectifs</p>
+      <h2>Ce que nous voulons accomplir</h2>
+      <div class="grid g3" style="margin-top:12px">
+        <div class="card"><span data-icon="poing"></span><h3>Donner aux étudiants HEC les clés de la santé</h3><p>Faire découvrir l'industrie de la santé dans toute sa diversité : soins, pharma, medtech, investissement, politiques publiques.</p></div>
+        <div class="card"><span data-icon="ampoule"></span><h3>Stimuler l'innovation et l'entrepreneuriat médical</h3><p>Encourager les projets qui transforment la médecine, de la startup naissante au grand laboratoire.</p></div>
+        <div class="card"><span data-icon="globe"></span><h3>Connecter les étudiants aux décideurs</h3><p>Créer des liens durables entre étudiants, dirigeants du secteur de la santé et décideurs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band carte">
+    <div class="wrap">
+      <p class="surtitre">Nos activités</p>
+      <h2>Sur le terrain, toute l'année</h2>
+      <p class="bandeau">Chaque activité met nos membres face à des professionnels de la santé, dans leur environnement.</p>
+      <div class="grid g3">
+        <div class="card activite" style="background:var(--blanc)"><span data-icon="immeuble"></span><h3>Company visits</h3><span class="freq">2 par mois<sup style="font-size:14px">1</sup></span><p>Des visites exclusives réservées aux membres, dans des cabinets de conseil, des fonds VC/PE, des laboratoires et des medtechs.</p></div>
+        <div class="card activite" style="background:var(--blanc)"><span data-icon="avion"></span><h3>Study trips</h3><span class="freq">International</span><p>Des voyages pour explorer les écosystèmes santé les plus innovants, à la rencontre de professionnels du secteur, avec de vraies occasions de networking.</p></div>
+        <div class="card activite" style="background:var(--blanc)"><span data-icon="micro"></span><h3>Événements &amp; projets</h3><span class="freq">Conférences</span><p>Conférences, soirées networking et projets collaboratifs qui réunissent étudiants, professionnels de santé, investisseurs et entrepreneurs.</p></div>
+      </div>
+      <p class="source">1. Présentation Medx HEC 2026-2027.</p>
+    </div>
+  </section>
+
+  <section class="band marine">
+    <div class="wrap split">
+      <div>
+        <p class="surtitre">Pour nos membres</p>
+        <h2>Ce que vous en retirez</h2>
+        <ul class="puces">
+          <li>Une vision concrète des métiers de la santé, du bloc opératoire au comité d'investissement.</li>
+          <li>Un accès direct aux recruteurs et aux alumni du secteur.</li>
+          <li>Des expériences à valoriser en entretien : visites, études de cas, voyages.</li>
+          <li>Une communauté d'étudiants aux parcours scientifiques et business.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Prochaine étape</h3>
+        <p>Rejoignez Medx HEC pour recevoir les invitations aux prochaines visites et événements.</p>
+        <div class="actions"><a class="btn" href="#contact">Nous rejoindre</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PARTENARIATS ============ -->
+<div class="vue" id="partenariats" data-titre="Partenariats" hidden>
+  <section class="page-head marine"><span class="cercle-a"></span>
+    <div class="wrap"><p class="surtitre">Partenariats</p><h1>Rencontrez les talents santé de HEC</h1><p>Nous construisons avec chaque partenaire un format adapté à ses objectifs.</p></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="surtitre">Secteurs</p>
+      <h2>Avec qui nous travaillons</h2>
+      <p class="bandeau">Un partnership officer dédié suit chaque secteur, pour un interlocuteur unique côté Medx HEC.</p>
+      <div class="secteurs">
+        <div class="card secteur"><span data-icon="banque"></span><div><h3>Banques d'investissement</h3><p>Équipes santé, M&amp;A et ECM.</p><div class="officer" data-officer="M&amp;A"></div></div></div>
+        <div class="card secteur"><span data-icon="cible"></span><div><h3>Cabinets de conseil</h3><p>Stratégie et transformation en santé.</p><div class="officer" data-officer="Consulting"></div></div></div>
+        <div class="card secteur"><span data-icon="graphe"></span><div><h3>Venture Capital</h3><p>Fonds early-stage et growth santé.</p><div class="officer" data-officer="Venture Capital"></div></div></div>
+        <div class="card secteur"><span data-icon="graphe"></span><div><h3>Private Equity</h3><p>Fonds investis dans la santé.</p><div class="officer" data-officer="Private Equity"></div></div></div>
+        <div class="card secteur"><span data-icon="fiole"></span><div><h3>Big Pharma &amp; laboratoires</h3><p>Stratégie, accès au marché, business development.</p><div class="officer" data-officer="Pharma"></div></div></div>
+        <div class="card secteur"><span data-icon="puce"></span><div><h3>Medtech &amp; biotech</h3><p>Dispositifs médicaux, diagnostic, biotechnologies.</p><div class="officer" data-officer="Medtech"></div></div></div>
+        <div class="card secteur"><span data-icon="fusee"></span><div><h3>Startups santé</h3><p>Jeunes pousses de la e-santé et de la deeptech.</p><div class="officer" data-officer="Startups"></div></div></div>
+        <div class="card secteur"><span data-icon="colonnes"></span><div><h3>Institutions publiques</h3><p>Agences, hôpitaux, régulateurs.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band marine">
+    <div class="wrap">
+      <p class="surtitre">Pourquoi nous</p>
+      <h2>Pourquoi travailler avec Medx HEC</h2>
+      <div class="raisons" style="margin-top:28px">
+        <div class="raison"><span data-icon="mains"></span><p><strong>Créez des liens durables</strong> avec les futurs leaders du secteur, grâce aux visites, tables rondes et soirées networking.</p></div>
+        <div class="raison"><span data-icon="porte_voix"></span><p><strong>Mettez en avant votre expertise</strong> et votre positionnement auprès d'un public business exigeant, via nos événements et nos canaux de communication.</p></div>
+        <div class="raison"><span data-icon="cible"></span><p><strong>Identifiez les meilleurs talents HEC</strong> déjà engagés dans le secteur de la santé.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="surtitre">Formats</p>
+      <h2>Comment collaborer</h2>
+      <div class="formats" style="margin-top:12px">
+        <div class="card"><h3>Visite de vos locaux</h3><p>Accueillez un groupe de membres pour présenter vos métiers et vos équipes.</p></div>
+        <div class="card"><h3>Table ronde ou conférence</h3><p>Intervenez sur le campus devant des étudiants motivés par la santé.</p></div>
+        <div class="card"><h3>Étude de cas</h3><p>Proposez un sujet concret, nos membres y travaillent en équipe.</p></div>
+        <div class="card"><h3>Study trip</h3><p>Recevez notre délégation lors d'un voyage d'études à l'international.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band carte">
+    <div class="wrap">
+      <p class="surtitre">Ils nous font confiance</p>
+      <h2>Nos partenaires</h2>
+      <div class="logos" style="margin-top:12px">
+        <div class="logo-vide">Logo partenaire</div><div class="logo-vide">Logo partenaire</div><div class="logo-vide">Logo partenaire</div>
+        <div class="logo-vide">Logo partenaire</div><div class="logo-vide">Logo partenaire</div><div class="logo-vide">Votre logo ici</div>
+      </div>
+      <div class="actions"><a class="btn" href="#contact">Proposer un partenariat</a><a class="btn ghost" href="#qui-sommes-nous">Voir l'équipe</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<div class="vue" id="contact" data-titre="Contact" hidden>
+  <section class="page-head marine"><span class="cercle-a"></span>
+    <div class="wrap"><p class="surtitre">Contact</p><h1>Parlons-en</h1><p>Entreprise, étudiant ou alumni : écrivez-nous, nous répondons à chaque message.</p></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap contact-grid">
+      <div>
+        <form id="form-contact" novalidate>
+          <div class="duo">
+            <div class="champ"><label for="nom">Nom complet</label><input id="nom" name="nom" autocomplete="name" required></div>
+            <div class="champ"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="duo">
+            <div class="champ"><label for="profil">Vous êtes</label>
+              <select id="profil" name="profil">
+                <option>Entreprise ou partenaire</option>
+                <option>Étudiant HEC</option>
+                <option>Alumni</option>
+                <option>Presse</option>
+                <option>Autre</option>
+              </select></div>
+            <div class="champ"><label for="organisation">Organisation (facultatif)</label><input id="organisation" name="organisation" autocomplete="organization"></div>
+          </div>
+          <div class="champ"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Votre projet, votre question, la date qui vous intéresse…"></textarea></div>
+          <p class="erreur" id="form-erreur" hidden></p>
+          <div><button class="btn" type="submit">Préparer mon message</button></div>
+        </form>
+        <div class="recap" id="recap" hidden style="margin-top:20px">
+          <h3>Votre message est prêt</h3>
+          <p>Envoyez-le à <b data-email></b> depuis votre messagerie.</p>
+          <pre id="recap-texte"></pre>
+          <div class="actions" style="margin-top:8px"><a class="btn" id="recap-mail" href="#">Ouvrir ma messagerie</a><button class="btn ghost" type="button" id="recap-copier">Copier le message</button></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Nos coordonnées</h3>
+        <div class="coord" style="margin-top:16px">
+          <div class="ligne"><span data-icon="mail"></span><div><small>E-mail</small><span class="val" data-email></span></div></div>
+          <div class="ligne"><span data-icon="lien"></span><div><small>LinkedIn</small><a class="val" data-linkedin href="https://www.linkedin.com/company/medx-hec/" target="_blank" rel="noopener">linkedin.com/company/medx-hec</a></div></div>
+          <div class="ligne"><span data-icon="lieu"></span><div><small>Adresse</small><span class="val">HEC Paris, 1 rue de la Libération, 78350 Jouy-en-Josas</span></div></div>
+        </div>
+        <h3 style="margin-top:28px">Vos interlocuteurs</h3>
+        <ul class="puces">
+          <li><b>Partenariats :</b> Antoine Salah, Head of Partnerships</li>
+          <li><b>Événements :</b> Julia Le Gall, Head of Events</li>
+          <li><b>Presse et communication :</b> Juliette Boutin</li>
+          <li><b>Présidence :</b> Téa Cohen et Alexandra Gilles</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="band carte">
+    <div class="wrap faq">
+      <p class="surtitre">Questions fréquentes</p>
+      <h2>Avant de nous écrire</h2>
+      <details><summary>Faut-il avoir un parcours médical pour rejoindre Medx HEC ?</summary><p>Non. L'association est ouverte à tous les étudiants HEC intéressés par la santé, quel que soit leur cursus.</p></details>
+      <details><summary>Comment participer aux company visits ?</summary><p>Les visites sont réservées aux membres. Une fois inscrit, vous recevez les invitations et vous vous positionnez sur les créneaux qui vous intéressent.</p></details>
+      <details><summary>Mon entreprise souhaite organiser une visite, que faut-il prévoir ?</summary><p>Un créneau de deux heures environ, une présentation de vos métiers et un temps d'échange. Votre partnership officer s'occupe du reste.</p></details>
+      <details><summary>Les alumni peuvent-ils s'impliquer ?</summary><p>Oui, et nous y tenons. Intervenir lors d'une table ronde ou accueillir des étudiants est la meilleure façon de transmettre.</p></details>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="nom">Medx HEC</div>
+        <p>L'association santé et finance de HEC Paris. Health · Finance · Strategy.</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <a href="#accueil">Actualités</a><a href="#qui-sommes-nous">Qui sommes-nous</a><a href="#missions">Missions</a><a href="#partenariats">Partenariats</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <a data-linkedin href="https://www.linkedin.com/company/medx-hec/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#contact">Newsletter (bientôt)</a>
+      </div>
+    </div>
+    <div class="foot-bas"><span>© 2026 Medx HEC</span><span>Association étudiante de HEC Paris</span></div>
+  </div>
+</footer>
+
+<script src="data/content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
